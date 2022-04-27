@@ -1,4 +1,25 @@
 {
+    "doctrine/annotations": {
+        "version": "1.13",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "a2759dd6123694c8d901d0ec80006e044c2e6457"
+        },
+        "files": [
+            "config/routes/annotations.yaml"
+        ]
+    },
+    "doctrine/inflector": {
+        "version": "2.0.4"
+    },
+    "doctrine/lexer": {
+        "version": "1.2.3"
+    },
+    "nikic/php-parser": {
+        "version": "v4.13.2"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -93,6 +114,15 @@
     "symfony/http-kernel": {
         "version": "v5.4.7"
     },
+    "symfony/maker-bundle": {
+        "version": "1.40",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
+        }
+    },
     "symfony/polyfill-intl-grapheme": {
         "version": "v1.25.0"
     },
@@ -132,6 +162,21 @@
     },
     "symfony/string": {
         "version": "v5.4.3"
+    },
+    "symfony/translation-contracts": {
+        "version": "v2.5.1"
+    },
+    "symfony/validator": {
+        "version": "5.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "5.3",
+            "ref": "c32cfd98f714894c4f128bb99aa2530c1227603c"
+        },
+        "files": [
+            "config/packages/validator.yaml"
+        ]
     },
     "symfony/var-dumper": {
         "version": "v5.4.6"
