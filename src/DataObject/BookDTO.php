@@ -2,9 +2,9 @@
 
 namespace App\DataObject;
 
-use App\Request\TestRequest;
+use App\Request\StoreBookRequest;
 
-class Test
+class BookDTO
 {
     private string $title;
     private ?string $description;
@@ -15,12 +15,12 @@ class Test
         $this->description = $values['description'];
     }
 
-    static function createFromRequest(TestRequest $request): self
+    static function createFromRequest(StoreBookRequest $request): self
     {
         return new self(
             [
-                'title' => $request->getRequest()->request->get('title'),
-                'description' => $request->getRequest()->request->get('description'),
+                'title' => $request->title,
+                'description' => $request->description,
             ]
         );
     }
@@ -30,7 +30,7 @@ class Test
         return $this->title;
     }
 
-    public function getDescription(): string
+    public function getDescription(): ?string
     {
         return $this->description;
     }

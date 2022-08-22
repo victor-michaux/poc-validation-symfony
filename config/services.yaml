@@ -22,3 +22,11 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+#    App\ArgumentResolver\FormRequestValueResolver:
+#        tags:
+#            - { name: controller.argument_value_resolver, priority: 100 }
+
+#    App\Serializer\Normalizer\BaseFormRequestNormalizer:
+#        tags:
+#            - { name: serializer.normalizer }
